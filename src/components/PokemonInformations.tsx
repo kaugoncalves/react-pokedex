@@ -31,12 +31,11 @@ export function PokemonInformations(props: Pokemon) {
 
         <>
             <div style={{ background: `linear-gradient(${finalColor[0]}, ${finalColor[1]})` }}
-                className={`shadow-md bg-opacity-5 m-3 w-fit h-max md:mt-10 rounded-3xl flex flex-col-reverse
-                md:justify-between md:h-max md:flex-row md:m-auto md:w-full`}>
+                className={`shadow-md bg-opacity-5 m-[1%] w-auto h-max rounded-3xl flex flex-col-reverse
+                md:justify-between md:h-fit md:flex-row md:m-auto md:w-full md:mt-[3%]`}>
 
-                <div className="flex flex-col w-[95%] m-auto md:w-full md:ml-10">
-
-                    <div className="bg-slate-200 bg-opacity-70 mt-4 w-[100%] h-fit p-2 rounded-3xl m-auto text-center md:m-0">
+                <div className="flex flex-col w-[95%] m-auto md:w-full md:m-[3%] md:items-center md:justify-center">
+                    <div className="bg-slate-200 bg-opacity-70 mt-4 w-[100%] h-fit p-3 rounded-3xl m-auto text-center md:m-0">
                         <p className="font-bold text-red-600 text-base md:text-xl"> Base Stats </p>
                         <PokemonStatsView
                             hp={props.stats.hp}
@@ -49,16 +48,16 @@ export function PokemonInformations(props: Pokemon) {
                     </div>
 
                     <div className="mt-2 w-full">
-                        <div className="shadow-md bg-opacity-60 mt-2  mb-5 w-full h-fit bg-slate-200 p-3 block rounded-3xl md:float-right">
+                        <div className="shadow-md bg-opacity-60 mt-[3%] mb-[1.5%] w-full h-fit bg-slate-200 p-3 block rounded-3xl md:float-right">
                             <p className="text-center font-bold text-red-600 text-base md:text-xl"> About</p>
                             <p className="text-sm md:text-lg"> {props.bio}</p>
                         </div>
                     </div>
                 </div>
 
-                <div className="m-max w-full flex justify-center ">
+                <div className="m-max w-full flex justify-center items-center">
                     <div className="h-full bg-opacity-60 shadow-md float-right w-[95%] mt-2 flex-col bg-slate-200 flex justify-center items-center rounded-3xl 
-                    md:w-max md:h-[24rem] md:mb-6 md:mt-6">
+                    md:w-max md:h-max md:m-[3%]">
                         <LazyLoadImage
                             visibleByDefault={false}
                             delayMethod={'debounce'}
@@ -77,7 +76,7 @@ export function PokemonInformations(props: Pokemon) {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-around m-3 md:mt-6 md:mb-0">
+            <div className="flex justify-around m-[2%] md:mt-[2.5%] md:mb-0">
                 <button onClick={() => props.prevPokemon()}
                     className="border-black border bg-[#444] w-24 h-1/4 text-white shadow-md font-medium md:h-1/2 md:w-56">&lt; Prev</button>
                 <button onClick={() => props.nextPokemon()}
