@@ -31,7 +31,7 @@ export function PokemonInformations(props: Pokemon) {
 
         <>
             <div style={{ background: `linear-gradient(${finalColor[0]}, ${finalColor[1]})` }}
-                className={`shadow-md bg-opacity-5 m-3 w-fit h-max md:mt-10 rounded-3xl flex flex-col-reverse max-h-[80%]
+                className={`shadow-md bg-opacity-5 m-3 w-fit h-max md:mt-10 rounded-3xl flex flex-col-reverse
                 md:justify-between md:h-max md:flex-row md:m-auto md:w-full`}>
 
                 <div className="flex flex-col w-[95%] m-auto md:w-full md:ml-10">
@@ -56,14 +56,14 @@ export function PokemonInformations(props: Pokemon) {
                     </div>
                 </div>
 
-                <div className="m-auto w-full flex justify-center ">
+                <div className="m-max w-full flex justify-center ">
                     <div className="h-full bg-opacity-60 shadow-md float-right w-[95%] mt-2 flex-col bg-slate-200 flex justify-center items-center rounded-3xl 
                     md:w-max md:h-[24rem] md:mb-6 md:mt-6">
                         <LazyLoadImage
                             visibleByDefault={false}
                             delayMethod={'debounce'}
                             effect="blur"
-                            className="w-60 md:w-72"
+                            className="w-52 md:w-72"
                             src={props.image}
                             alt="pokemon" />
                         <div className="flex flex-row justify-center w-full mt-3 mb-5">
