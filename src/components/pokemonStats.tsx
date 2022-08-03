@@ -2,7 +2,7 @@ import { PokemonStats } from "../App";
 
 export function PokemonStatsView(props?: PokemonStats) {
     return (
-        <div className="text-xl">
+        <div className="text-base h-fit md:text-xl">
             <div className=" flex flex-row justify-around">
                 <div className="flex flex-col">
                     <span className="font-bold">HP</span>

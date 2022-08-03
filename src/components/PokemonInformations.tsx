@@ -37,7 +37,7 @@ export function PokemonInformations(props: Pokemon) {
                 <div className="flex flex-col w-[95%] m-auto md:w-full md:ml-10">
 
                     <div className="bg-slate-200 bg-opacity-70 mt-4 w-[100%] h-fit p-2 rounded-3xl m-auto text-center md:m-0">
-                        <p className="font-bold text-red-600 text-xl"> Base Stats </p>
+                        <p className="font-bold text-red-600 text-base md:text-xl"> Base Stats </p>
                         <PokemonStatsView
                             hp={props.stats.hp}
                             attack={props.stats.attack}
@@ -50,8 +50,8 @@ export function PokemonInformations(props: Pokemon) {
 
                     <div className="mt-2 w-full">
                         <div className="shadow-md bg-opacity-60 mt-2  mb-5 w-full h-fit bg-slate-200 p-3 block rounded-3xl md:float-right">
-                            <p className="text-center font-bold text-red-600 text-xl"> About</p>
-                            <p> {props.bio}</p>
+                            <p className="text-center font-bold text-red-600 text-base md:text-xl"> About</p>
+                            <p className="text-sm md:text-lg"> {props.bio}</p>
                         </div>
                     </div>
                 </div>
