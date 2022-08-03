@@ -90,7 +90,7 @@ function App() {
   }
 
   return (
-    <div className='flex justify-center items-center h-screen bg-gradient-to-b from-[#6ab7f5]  to-[#fff]'>
+    <div className='flex justify-center items-center h-[90vh] md:h-screen bg-gradient-to-b from-[#6ab7f5]  to-[#fff]'>
       <PokedexBackgorund
         name={pokemonData.name}
         id={pokemonData.id}
