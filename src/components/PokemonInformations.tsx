@@ -63,7 +63,7 @@ export function PokemonInformations(props: Pokemon) {
                             visibleByDefault={false}
                             delayMethod={'debounce'}
                             effect="blur"
-                            className="w-52 md:w-72"
+                            className="w-40 md:w-72"
                             src={props.image}
                             alt="pokemon" />
                         <div className="flex flex-row justify-center w-full mt-3 mb-5">

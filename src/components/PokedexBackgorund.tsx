@@ -5,7 +5,7 @@ import { PokemonInformations } from "./PokemonInformations";
 export function PokedexBackgorund(props: Pokemon) {
 
     return (
-        <div className="w-[80%] h-[85%] md:p-6 justify-center bg-red-600 border-8 rounded-3xl border-red-700 md:w-[65%] md:h-fit">
+        <div className="w-[80%] h-auto md:p-6 justify-center bg-red-600 border-8 rounded-3xl border-red-700 md:w-[65%] md:h-fit">
             <div className="w-[90%] font-medium text-xl capitalize ml-auto mr-auto h-9 mt-3 border-4 rounded-md border-gray-500 p-3 bg-cyan-50 flex text-center items-center justify-between
             md:w-full md:h-fit md:mt-5">
                 <span>#{ props.id }</span>
